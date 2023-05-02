@@ -32,7 +32,17 @@
 
 # band name Generator
 
-print("Welcome to the Band Name Generator.")
-street = input("What's the name of the city you grew up in?\n")
-pet = input("What's your pet's name?\n")
-print("Your band name could be " + street + " " + pet)
+# print("Welcome to the Band Name Generator.")
+# street = input("What's the name of the city you grew up in?\n")
+# pet = input("What's your pet's name?\n")
+# print("Your band name could be " + street + " " + pet)
+
+# a=6
+# b=2
+# # print('Addition : ', a + b)
+# # print('Subtraction : ', a - b)
+# print('Multiplication : ', a * b)
+# print('Division (float) : ', a / b)
+# print('Division (floor) : ', a // b)
+# print('Modulus : ', a % b)
+# print('Exponent : ', a ** b)
