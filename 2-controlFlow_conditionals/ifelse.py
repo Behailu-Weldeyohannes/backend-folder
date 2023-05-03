@@ -229,3 +229,136 @@
 #     print(f"Your score is {love_score}.")
 
 
+# a = 7
+# b = 3
+
+# print(a !=b)
+# print('o' in 'John')
+# print('o' not in 'John')
+
+# a = [3,7,42]
+# b = [3,7,42]
+# print(a == b)
+# print(a is b)
+# print(id(a), id(b))
+
+# print(int(False))
+# print(bool('Parrot'))
+# print(42 + True)
+# print(42 + False)
+
+# is_raining = True
+# is_cold = False
+# print("Good Morning")
+# if is_raining and is_cold:
+#     print("Bring Umbrella and jacket")
+# elif is_raining and not(is_cold):
+#     print("Bring Umbrella")
+# elif not(is_raining) and is_cold:
+#     print("Bring Jacket")
+# else:
+#     print("Umbrella is optional")
+
+# amount = 10
+# if amount <= 50:
+#     print("Purchase approved")
+# else:
+#     print("Please enter your pin!")
+
+#  ****** Build a claculator ****
+# Create a calculator which handles +,-,*,/ and outputs answer based on the mode/ operator used
+# Hint: use 3 separate inputs 
+# Bonus: Extend functionality with extra mode so it also does celsius to fahrenheit conversion
+# formula is: temp in C*9/5 + 32 = temp in f
+# mode = input('Enter math operation(+,-,*,/) or f for Celsius to Fahrenheit conversion: ')
+# num1 = float(input('Enter first number: '))
+# if mode.lower() == 'f':
+#     print(f'{num1} Celsius is equivalent to {(num1*9/5)+32 } fahrenheit')
+# else:
+#     num2 = float(input('Enter second number: '))
+
+#     if mode == '+':
+#         print(f'Answer is: {num1 + num2}')
+#     elif mode == '-':
+#         print(f'Answer is: {num1 - num2}')
+#     elif mode == '*':
+#         print(f'Answer is: {num1 * num2}')
+#     elif mode == '/':
+#         print(f'Answer is: {num1 / num2}')
+#     else:
+#         print('Input error!')
+# Create a calculator which handles +,-,*,/ and outputs answer based on the mode/ operator used
+# Hint: use 3 separate inputs 
+# Bonus: Extend functionality with extra mode so it also does celsius to fahrenheit conversion
+# formula is: temp in C*9/5 + 32 = temp in f
+
+#  **** excercise
+
+# def num_days(month):
+
+#     if month == 'jan':
+#         print('number of days in',month,'is',31)
+#     elif month == 'feb':
+#         print('number of days in',month,'is',28)
+#     elif month == 'mar':
+#         print('number of days in',month,'is',31)
+#     elif month == 'apr':
+#         print('number of days in',month,'is',30)
+#     elif month == 'may':
+#         print('number of days in',month,'is',31)
+#     elif month == 'jun':
+#         print('number of days in',month,'is',30)
+#     elif month == 'jul':
+#         print('number of days in',month,'is',31)
+#     elif month == 'aug':
+#         print('number of days in',month,'is',31)
+#     elif month == 'sep':
+#         print('number of days in',month,'is',30)
+#     elif month == 'oct':
+#         print('number of days in',month,'is',31)
+#     elif month == 'nov':
+#         print('number of days in',month,'is',30)
+#     elif month == 'dec':
+#         print('number of days in',month,'is',31)
+
+# num_days('oct')
+# optimize/shorten the code in the function
+# try to reduce the number of conditionals 
+
+#  option one
+
+# def num_days(month):
+
+#     if month == 'jan' or month == 'mar' or month == 'may' or month == 'jul' or month == 'aug' or month == 'oct' or month == 'dec':
+#         print('number of days in',month,'is',31)
+#     elif month == 'feb':
+#         print('number of days in',month,'is',28)
+#     elif month == 'apr' or month == 'jun' or month == 'sep' or month == 'nov':
+#         print('number of days in',month,'is',30)
+
+# num_days('jul')
+
+#  option two
+# def num_days(month):
+#     days = 31
+#     if month == 'apr' or month =='jun' or month =='sep' or month =='nov':
+#         days = 30
+#     elif month == 'feb':
+#         days = 28
+#     print('number of days in',month,'is',days)
+    
+
+# num_days('jan')
+
+# option three
+# def num_days(month):
+#     days = 31
+#     if month in {'apr','jun','sep','nov'}:
+#     #if month == 'apr' or month =='jun' or month =='sep' or month =='nov':
+#         days = 30
+#     elif month == 'feb':
+#         days = 28
+#     print('number of days in',month,'is',days)
+    
+
+# num_days('jan')
